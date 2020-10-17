@@ -7,6 +7,7 @@
     tools:context=".MainActivity">
 
     <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottieAnimationView"
         android:layout_width="300dp"
         android:layout_height="300dp"
         android:layout_marginStart="16dp"
@@ -19,5 +20,21 @@
         app:lottie_autoPlay="true"
         app:lottie_loop="true"
         app:lottie_rawRes="@raw/hospital" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/open_sans_bold"
+        android:text="@string/nearby_hospital"
+        android:textAlignment="center"
+        android:textColor="#424242"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lottieAnimationView" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
